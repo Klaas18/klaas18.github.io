@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portofolio</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
   </head>
   <body>
@@ -31,14 +33,25 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projects</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="beforenightfall.html">Before Night Fall</a></li>
-              <li><a class="dropdown-item" href="planetkat.html">Planet Kat</a></li>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Unity Projects</a>
+            <ul class="dropdown-menu">             
+                <li><a class="dropdown-item" href="platformer.html">2D Platformer</a></li>
+                <li><a class="dropdown-item" href="racegame.html">Race Game</a></li>
+                 <li><a class="dropdown-item" href="planetkat.html">Planet Kat</a></li>
+                 <li><a class="dropdown-item" href="beforenightfall.html">Before Night Fall</a></li>
+                <!-- <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+               </ul>
+           
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">C# Projects</a>
+            <ul class="dropdown-menu">         
               <li><a class="dropdown-item" href="#">Text Based Adventure</a></li>
               <li><a class="dropdown-item" href="#">Trivia Game</a></li>
              <!-- <li><hr class="dropdown-divider"></li>
-             <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+              <li><a class="dropdown-item" href="#">Separated link</a></li> -->
             </ul>
           </li>
         </ul>
@@ -51,32 +64,36 @@
         <section class="hero">
           <div class="px-4 py-5 my-5 text-center">
            <!-- <img class="d-block mx-auto mb-4" src="" alt="" width="72" height="57"> -->
+           <h2 class="display-5"> Klaas Zaagman</h2>
             <h1 class="display-5 fw-bold">Welcome</h1>
             <div class="col-lg-6 mx-auto">
               <p class="lead mb-4">Info Over Mezelf</p>
+
+
               <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
               <!--  <button type="button" class="btn btn-primary btn-lg px-4 gap-3">View Projects</button>-->
                <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> -->
               </div>
             </div>
           </div>
-        </section>
-
+        </section>     
         <section class="unity">
        <div class="container-md mt-5">
            <h2 class="text-center containerText">Unity Projects</h2>
       <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-                <img src="images/platformer.png">
-                <div class="card-body">
+          <div class="col-md-4"> 
+            <div class="card">  
+              <img src="images/platformer.png">
+              <div class="card-body">
                   <h5 class="card-title">2D Platformer</h5>
                   <h6 class="code-title">Code</h6> 
                   <p>C#</p>
-                  <p class="card-text">Basic 2D Platformer</p>
-                  <a href="Web Build/2d_game.html" class="btn btn-primary">Info</a>
+                  <p class="card-text">This was my first school project I made where you collect keys to get to the end of the level.</p>
+                  <p class="card-text">Assest from <a href="https://www.kenney.nl/">Kenney</a></p>
+                  <a href="Web Build/2d_game.html" class="btn btn-primary">Play</a>
                 </div>
               </div>
+            
           </div>
           <div class="col-md-4">
             <div class="card">
@@ -85,7 +102,7 @@
                   <h5 class="card-title">Race Game</h5>
                   <h6 class="code-title">Code</h6> 
                   <p>C#</p>
-                  <p class="card-text">Just A Simple Race Game</p>
+                  <p class="card-text">This was a really basic racing game and my first 3D Game i made.</p>
                   <a href="racegame.html" class="btn btn-primary">Info</a>
                 </div>
               </div>
@@ -97,12 +114,12 @@
                   <h5 class="card-title">Planet Cat (Game Jam)</h5>
                   <h6 class="code-title">Code</h6> 
                   <p>C#</p>
-                  <p class="card-text">Earth Has Lost All It's Cat's You Go To Planet Kat To Catch Cat's And Keep The People On Earth Happy</p>
-                  <a href="planetkat.html" class="btn btn-primary">Info</a>
+                  <p class="card-text">This Game was Made in 1 week with a school Game Jam. I Made the Main Menu with assest made by Kenney, also did some audio things and the dialogue box</p><!--Earth Has Lost All It's Cat's You Go To Planet Kat To Catch Cat's And Keep The People On Earth Happy.-->
+                  <p class="card-text"> Main Menu Music is made by <a href="https://www.youtube.com/@Why_/featured" >Why_</a></p>
+                  <a href="https://youtu.be/WLDxhD_zbPI" class="btn btn-primary">Watch</a>
                 </div>
               </div>
-          </div>
-
+          </div>          
           <div class="col-md-4">
             <div class="card">
                 <img src="images/BeforeNightFall.png">
@@ -110,8 +127,7 @@
                   <h5 class="card-title">Before Night Fall (Tower Defence)</h5>
                   <h6 class="code-title">Code</h6> 
                   <p>C#</p>
-                  <p class="card-text">A Medieval Style Tower Defence Game</p>
-                  <a href="" class="link" target="_blank">[ <img src="" width="30" height="30"> DOWNLOAD ] </a>
+                  <p class="card-text">A Medieval Style Tower Defence Game where you get contracts to help defend someone's castle. I made all the tower functions</p>
                   <a href="beforenightfall.html" class="btn btn-primary">Info</a>
                 </div>
               </div>
@@ -158,5 +174,6 @@
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="Java/java.js"></script>
   </body>
 </html>
